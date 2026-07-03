@@ -35,14 +35,14 @@
     <content>
       <![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>一个努力活着的研究牲</p><h1 id="学习经历"><a href="#学习经历" class="headerlink" title="学习经历"></a>学习经历</h1><p>2022.09-2026.06     山东财经大学    数字媒体技术</p><p>2026.06-至今           杭州电子科技大学    数字媒体技术</p><h1 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h1><p><strong>三维模型轻量化处理与图形学算法学习平台</strong>(<em>本科毕业设计</em>)                                                                      2025年11月-2026年4月</p><p>项目简介：网页端整合 Three.js 引擎，实现三维模型的可视化导入、轻量化算法的实时运行与效果对比，构建 “理论学习 - 代码实践 - 效果验证 - 交流探讨” 的闭环学习体系。助力学习者快速掌握图形学算法<strong>。</strong></p><p>实现功能：</p><p>1.基于three.js实现主流三维模型(OBJ)的加载，实现QEM等经典三维模型轻量化处理算法</p><p>2.实现计算机图形学算法前沿论坛模块功能，包含文章的上传、评论以及存储至数据库等</p><p>3.在实现论坛模块功能的情况下，利用RAG技术实现专用知识库，利用Spring AI+Ollama实现本地答疑大模型</p><p><strong>智能健身教练平台</strong>(<em><a href="https://github.com/huabuweixin/smart-fitness">https://github.com/huabuweixin/smart-fitness</a></em>)                                                         2025年04月-2025年06月      </p><p>项目简介：基于ruoyi-vue（后端为SpringBoot3，前端Vue2）框架开发的智能健身教练平台。分为学员端、教练端、管理员端，包含健身教程编写上传管理、素材库开发、AI对话、AI分析等功能。</p><p>技术栈：<em>Spring AI+Vue+Mysql+Redis+SpringBoot+Flask+Ollama+Mediapipe+Dify</em></p><p>实现功能：</p><p>1.利用Spring AI+Ollama实现本地大模型的部署与调用，创建对话数据库使得用户对话记录持久化存储。</p><p>2.通过Docker部署Dify，利用Dify创建智能助手调用市面上模型api方式实现将AI助手嵌入至网页中。</p><p>3.利用Mediapipe与OpenCV实现对视频中角色动作关节角度分析，利用Flask创建分析服务端，使用使用RestTemplate打通与后端通信从而实现用户上传视频分析动作功能。</p><p><strong>VulkanToy</strong>(<em><a href="https://github.com/Vasomy/VulkanToy">https://github.com/Vasomy/VulkanToy</a></em>)                                                                                  2024年11月-2025年01月</p><p>参与实现：</p><p>1.在Vulkan API的基础上实现OBJ模型的加载与输出</p><p>2.在导入模型后实现对模型QEM处理</p>]]>
     </content>
-    <id>http://example.com/2026/06/13/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</id>
-    <link href="http://example.com/2026/06/13/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
-    <published>2026-06-13T08:35:29.531Z</published>
+    <id>http://example.com/2026/07/03/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</id>
+    <link href="http://example.com/2026/07/03/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+    <published>2026-07-02T16:00:00.000Z</published>
     <summary>
       <![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>一个努力活着的研究牲</p>
 <h1 id="学习经历"><a href="#学习经历" class="headerlink]]>
     </summary>
     <title>个人简介</title>
-    <updated>2026-07-03T13:10:14.954Z</updated>
+    <updated>2026-07-03T13:18:41.696Z</updated>
   </entry>
 </feed>
