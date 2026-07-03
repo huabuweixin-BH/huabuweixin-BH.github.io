@@ -1,55 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2026/06/13/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>个人简介</title>
+    <url>/2026/06/13/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>一个努力活着的研究牲</p>
+<h1 id="学习经历"><a href="#学习经历" class="headerlink" title="学习经历"></a>学习经历</h1><p>2022.09-2026.06     山东财经大学    数字媒体技术</p>
+<p>2026.06-至今           杭州电子科技大学    数字媒体技术</p>
+<h1 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h1><p><strong>三维模型轻量化处理与图形学算法学习平台</strong>(<em>本科毕业设计</em>)                                                                      2025年11月-2026年4月</p>
+<p>项目简介：网页端整合 Three.js 引擎，实现三维模型的可视化导入、轻量化算法的实时运行与效果对比，构建 “理论学习 - 代码实践 - 效果验证 - 交流探讨” 的闭环学习体系。助力学习者快速掌握图形学算法<strong>。</strong></p>
+<p>实现功能：</p>
+<p>1.基于three.js实现主流三维模型(OBJ)的加载，实现QEM等经典三维模型轻量化处理算法</p>
+<p>2.实现计算机图形学算法前沿论坛模块功能，包含文章的上传、评论以及存储至数据库等</p>
+<p>3.在实现论坛模块功能的情况下，利用RAG技术实现专用知识库，利用Spring AI+Ollama实现本地答疑大模型</p>
+<p><strong>智能健身教练平台</strong>(<em><a href="https://github.com/huabuweixin/smart-fitness">https://github.com/huabuweixin/smart-fitness</a></em>)                                                         2025年04月-2025年06月      </p>
+<p>项目简介：基于ruoyi-vue（后端为SpringBoot3，前端Vue2）框架开发的智能健身教练平台。分为学员端、教练端、管理员端，包含健身教程编写上传管理、素材库开发、AI对话、AI分析等功能。</p>
+<p>技术栈：<em>Spring AI+Vue+Mysql+Redis+SpringBoot+Flask+Ollama+Mediapipe+Dify</em></p>
+<p>实现功能：</p>
+<p>1.利用Spring AI+Ollama实现本地大模型的部署与调用，创建对话数据库使得用户对话记录持久化存储。</p>
+<p>2.通过Docker部署Dify，利用Dify创建智能助手调用市面上模型api方式实现将AI助手嵌入至网页中。</p>
+<p>3.利用Mediapipe与OpenCV实现对视频中角色动作关节角度分析，利用Flask创建分析服务端，使用使用RestTemplate打通与后端通信从而实现用户上传视频分析动作功能。</p>
+<p><strong>VulkanToy</strong>(<em><a href="https://github.com/Vasomy/VulkanToy">https://github.com/Vasomy/VulkanToy</a></em>)                                                                                  2024年11月-2025年01月</p>
+<p>参与实现：</p>
+<p>1.在Vulkan API的基础上实现OBJ模型的加载与输出</p>
+<p>2.在导入模型后实现对模型QEM处理</p>
 ]]></content>
   </entry>
   <entry>
     <title>Visual Studio 2026配置Vulkan</title>
     <url>/2026/07/03/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan/</url>
     <content><![CDATA[<h1 id="1-Vulkan-SDK下载安装"><a href="#1-Vulkan-SDK下载安装" class="headerlink" title="1.Vulkan SDK下载安装"></a>1.Vulkan SDK下载安装</h1><p>登录<code>LunarG</code>网站<a href="https://vulkan.lunarg.com/">https://vulkan.lunarg.com/</a>, 选择<code>Windows</code>平台下的最新SDK下载安装（.exe），配置好安装路径。</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703202818019.png" alt="image-20260703202818019"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703202818019.png" alt="image-20260703202818019"></p>
 <p>进入安装目录中的Bin文件夹找到vkcube.exe，若能运行则安装成功。</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203042319.png" alt="image-20260703203042319"></p>
-<h1 id="2-下载GLFW与GLM库"><a href="#2-下载GLFW与GLM库" class="headerlink" title="2.下载GLFW与GLM库"></a>2.下载GLFW与GLM库</h1><p>GLFW库：<a href="https://www.glfw.org/download.html%E4%B8%8B%E8%BD%BD64%E4%BD%8D%E5%8D%B3%E5%8F%AF">https://www.glfw.org/download.html下载64位即可</a></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203042319.png" alt="image-20260703203042319"></p>
+<h1 id="2-下载GLFW与GLM库"><a href="#2-下载GLFW与GLM库" class="headerlink" title="2.下载GLFW与GLM库"></a>2.下载GLFW与GLM库</h1><p>GLFW库：<a href="https://www.glfw.org/download.html下载64位即可">https://www.glfw.org/download.html下载64位即可</a></p>
 <p>GLM库：<a href="https://github.com/g-truc/glm">https://github.com/g-truc/glm</a></p>
 <p>在Vulkan安装路径下创建ThirdParty文件夹</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203427774.png" alt="image-20260703203427774"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203427774.png" alt="image-20260703203427774"></p>
 <p>将GLFW与GLM解压后的文件夹复制到该文件夹中。</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203521685.png" alt="image-20260703203521685"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203521685.png" alt="image-20260703203521685"></p>
 <h1 id="3-Visual-Studio2026配置"><a href="#3-Visual-Studio2026配置" class="headerlink" title="3.Visual Studio2026配置"></a>3.Visual Studio2026配置</h1><p>创建一个控制台应用，进入项目属性。将配置改为所有配置，平台为x64</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203700582.png" alt="image-20260703203700582"></p>
-<p>在C&#x2F;C++&gt;常规中附加包目录添加：（注意换成自己的安装路径）</p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203700582.png" alt="image-20260703203700582"></p>
+<p>在C/C++&gt;常规中附加包目录添加：（注意换成自己的安装路径）</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">D:\Vulkan\ThirdParty\glm</span><br><span class="line">D:\Vulkan\ThirdParty\glfw-3.4.bin.WIN64\include</span><br><span class="line">D:\Vulkan\Include</span><br></pre></td></tr></table></figure>
-
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203957838.png" alt="image-20260703203957838"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203957838.png" alt="image-20260703203957838"></p>
 <p>在链接器&gt;常规&gt;附加包目录中添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">D:\Vulkan\ThirdParty\glfw-3.4.bin.WIN64\lib-vc2022</span><br><span class="line">D:\Vulkan\Lib</span><br></pre></td></tr></table></figure>
-
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703204141773.png" alt="image-20260703204141773"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703204141773.png" alt="image-20260703204141773"></p>
 <p>在输入附加依赖项中添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vulkan-1.lib</span><br><span class="line">glfw3.lib</span><br></pre></td></tr></table></figure>
-
 <p>确定即可。</p>
 <p>测试代码：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> GLFW_INCLUDE_VULKAN</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;GLFW/glfw3.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> GLM_FORCE_RADIANS</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> GLM_FORCE_DEPTH_ZERO_TO_ONE</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;glm/vec4.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;glm/mat4x4.hpp&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">glfwInit</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CLIENT_API, GLFW_NO_API);</span><br><span class="line">    GLFWwindow* window = <span class="built_in">glfwCreateWindow</span>(<span class="number">800</span>, <span class="number">600</span>, <span class="string">&quot;Vulkan window&quot;</span>, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">uint32_t</span> extensionCount = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">vkEnumerateInstanceExtensionProperties</span>(<span class="literal">nullptr</span>, &amp;extensionCount, <span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; extensionCount &lt;&lt; <span class="string">&quot; extensions supported&quot;</span> &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    glm::mat4 matrix;</span><br><span class="line">    glm::vec4 vec;</span><br><span class="line">    <span class="keyword">auto</span> test = matrix * vec;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">glfwWindowShouldClose</span>(window)) &#123;</span><br><span class="line">        <span class="built_in">glfwPollEvents</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwDestroyWindow</span>(window);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwTerminate</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>出现下图情况即为成功：</p>
-<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703204326064.png" alt="image-20260703204326064"></p>
+<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703204326064.png" alt="image-20260703204326064"></p>
 ]]></content>
       <tags>
         <tag>Vulkan</tag>
