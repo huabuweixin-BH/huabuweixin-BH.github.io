@@ -118,11 +118,6 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-文章">
-
-    <a href="/posts/" rel="section"><i class="fa fa-list fa-fw"></i>文章</a>
-
-  </li>
         <li class="menu-item menu-item-tags">
 
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
@@ -221,7 +216,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2026-11-24 00:00:00 / 修改时间：22:26:24" itemprop="dateCreated datePublished" datetime="2026-11-24T00:00:00+08:00">2026-11-24</time>
+              <time title="创建时间：2026-11-24 00:00:00 / 修改时间：22:40:36" itemprop="dateCreated datePublished" datetime="2026-11-24T00:00:00+08:00">2026-11-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">论文阅读分享</span></a>
+                </span>
             </span>
 
           
@@ -390,9 +394,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-07-03 20:23:57 / 修改时间：20:50:31" itemprop="dateCreated datePublished" datetime="2026-07-03T20:23:57+08:00">2026-07-03</time>
+              <time title="创建时间：2026-07-03 20:23:57" itemprop="dateCreated datePublished" datetime="2026-07-03T20:23:57+08:00">2026-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-11-24 22:40:36" itemprop="dateModified" datetime="2026-11-24T22:40:36+08:00">2026-11-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" itemprop="url" rel="index"><span itemprop="name">技术文章</span></a>
+                </span>
             </span>
 
           
@@ -407,30 +426,34 @@
 
       
           <h1 id="1-Vulkan-SDK下载安装"><a href="#1-Vulkan-SDK下载安装" class="headerlink" title="1.Vulkan SDK下载安装"></a>1.Vulkan SDK下载安装</h1><p>登录<code>LunarG</code>网站<a target="_blank" rel="noopener" href="https://vulkan.lunarg.com/">https://vulkan.lunarg.com/</a>, 选择<code>Windows</code>平台下的最新SDK下载安装（.exe），配置好安装路径。</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703202818019.png" alt="image-20260703202818019"></p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703202818019.png" alt="image-20260703202818019"></p>
 <p>进入安装目录中的Bin文件夹找到vkcube.exe，若能运行则安装成功。</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203042319.png" alt="image-20260703203042319"></p>
-<h1 id="2-下载GLFW与GLM库"><a href="#2-下载GLFW与GLM库" class="headerlink" title="2.下载GLFW与GLM库"></a>2.下载GLFW与GLM库</h1><p>GLFW库：<a target="_blank" rel="noopener" href="https://www.glfw.org/download.html下载64位即可">https://www.glfw.org/download.html下载64位即可</a></p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203042319.png" alt="image-20260703203042319"></p>
+<h1 id="2-下载GLFW与GLM库"><a href="#2-下载GLFW与GLM库" class="headerlink" title="2.下载GLFW与GLM库"></a>2.下载GLFW与GLM库</h1><p>GLFW库：<a target="_blank" rel="noopener" href="https://www.glfw.org/download.html%E4%B8%8B%E8%BD%BD64%E4%BD%8D%E5%8D%B3%E5%8F%AF">https://www.glfw.org/download.html下载64位即可</a></p>
 <p>GLM库：<a target="_blank" rel="noopener" href="https://github.com/g-truc/glm">https://github.com/g-truc/glm</a></p>
 <p>在Vulkan安装路径下创建ThirdParty文件夹</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203427774.png" alt="image-20260703203427774"></p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203427774.png" alt="image-20260703203427774"></p>
 <p>将GLFW与GLM解压后的文件夹复制到该文件夹中。</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203521685.png" alt="image-20260703203521685"></p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203521685.png" alt="image-20260703203521685"></p>
 <h1 id="3-Visual-Studio2026配置"><a href="#3-Visual-Studio2026配置" class="headerlink" title="3.Visual Studio2026配置"></a>3.Visual Studio2026配置</h1><p>创建一个控制台应用，进入项目属性。将配置改为所有配置，平台为x64</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203700582.png" alt="image-20260703203700582"></p>
-<p>在C/C++&gt;常规中附加包目录添加：（注意换成自己的安装路径）</p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203700582.png" alt="image-20260703203700582"></p>
+<p>在C&#x2F;C++&gt;常规中附加包目录添加：（注意换成自己的安装路径）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D:\Vulkan\ThirdParty\glm</span><br><span class="line">D:\Vulkan\ThirdParty\glfw-3.4.bin.WIN64\include</span><br><span class="line">D:\Vulkan\Include</span><br></pre></td></tr></table></figure>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703203957838.png" alt="image-20260703203957838"></p>
+
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703203957838.png" alt="image-20260703203957838"></p>
 <p>在链接器&gt;常规&gt;附加包目录中添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D:\Vulkan\ThirdParty\glfw-3.4.bin.WIN64\lib-vc2022</span><br><span class="line">D:\Vulkan\Lib</span><br></pre></td></tr></table></figure>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703204141773.png" alt="image-20260703204141773"></p>
+
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703204141773.png" alt="image-20260703204141773"></p>
 <p>在输入附加依赖项中添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vulkan-1.lib</span><br><span class="line">glfw3.lib</span><br></pre></td></tr></table></figure>
+
 <p>确定即可。</p>
 <p>测试代码：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> GLFW_INCLUDE_VULKAN</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;GLFW/glfw3.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> GLM_FORCE_RADIANS</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> GLM_FORCE_DEPTH_ZERO_TO_ONE</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;glm/vec4.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;glm/mat4x4.hpp&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">glfwInit</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CLIENT_API, GLFW_NO_API);</span><br><span class="line">    GLFWwindow* window = <span class="built_in">glfwCreateWindow</span>(<span class="number">800</span>, <span class="number">600</span>, <span class="string">&quot;Vulkan window&quot;</span>, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">uint32_t</span> extensionCount = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">vkEnumerateInstanceExtensionProperties</span>(<span class="literal">nullptr</span>, &amp;extensionCount, <span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; extensionCount &lt;&lt; <span class="string">&quot; extensions supported&quot;</span> &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    glm::mat4 matrix;</span><br><span class="line">    glm::vec4 vec;</span><br><span class="line">    <span class="keyword">auto</span> test = matrix * vec;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">glfwWindowShouldClose</span>(window)) &#123;</span><br><span class="line">        <span class="built_in">glfwPollEvents</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwDestroyWindow</span>(window);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwTerminate</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>出现下图情况即为成功：</p>
-<p><img src="Visual-Studio-2026配置Vulkan.assets/image-20260703204326064.png" alt="image-20260703204326064"></p>
+<p><img src="/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan.assets/image-20260703204326064.png" alt="image-20260703204326064"></p>
 
       
     </div>
@@ -515,6 +538,12 @@
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
