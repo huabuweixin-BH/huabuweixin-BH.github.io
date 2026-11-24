@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>个人简介</title>
-    <url>/2026/07/03/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>一个努力活着的研究牲</p>
-<h1 id="学习经历"><a href="#学习经历" class="headerlink" title="学习经历"></a>学习经历</h1><p>2022.09-2026.06     山东财经大学    数字媒体技术</p>
-<p>2026.06-至今           杭州电子科技大学    数字媒体技术</p>
-<h1 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h1><p><strong>三维模型轻量化处理与图形学算法学习平台</strong>(<em>本科毕业设计</em>)                                                                      2025年11月-2026年4月</p>
-<p>项目简介：网页端整合 Three.js 引擎，实现三维模型的可视化导入、轻量化算法的实时运行与效果对比，构建 “理论学习 - 代码实践 - 效果验证 - 交流探讨” 的闭环学习体系。助力学习者快速掌握图形学算法<strong>。</strong></p>
-<p>实现功能：</p>
-<p>1.基于three.js实现主流三维模型(OBJ)的加载，实现QEM等经典三维模型轻量化处理算法</p>
-<p>2.实现计算机图形学算法前沿论坛模块功能，包含文章的上传、评论以及存储至数据库等</p>
-<p>3.在实现论坛模块功能的情况下，利用RAG技术实现专用知识库，利用Spring AI+Ollama实现本地答疑大模型</p>
-<p><strong>智能健身教练平台</strong>(<em><a href="https://github.com/huabuweixin/smart-fitness">https://github.com/huabuweixin/smart-fitness</a></em>)                                                         2025年04月-2025年06月      </p>
-<p>项目简介：基于ruoyi-vue（后端为SpringBoot3，前端Vue2）框架开发的智能健身教练平台。分为学员端、教练端、管理员端，包含健身教程编写上传管理、素材库开发、AI对话、AI分析等功能。</p>
-<p>技术栈：<em>Spring AI+Vue+Mysql+Redis+SpringBoot+Flask+Ollama+Mediapipe+Dify</em></p>
-<p>实现功能：</p>
-<p>1.利用Spring AI+Ollama实现本地大模型的部署与调用，创建对话数据库使得用户对话记录持久化存储。</p>
-<p>2.通过Docker部署Dify，利用Dify创建智能助手调用市面上模型api方式实现将AI助手嵌入至网页中。</p>
-<p>3.利用Mediapipe与OpenCV实现对视频中角色动作关节角度分析，利用Flask创建分析服务端，使用使用RestTemplate打通与后端通信从而实现用户上传视频分析动作功能。</p>
-<p><strong>VulkanToy</strong>(<em><a href="https://github.com/Vasomy/VulkanToy">https://github.com/Vasomy/VulkanToy</a></em>)                                                                                  2024年11月-2025年01月</p>
-<p>参与实现：</p>
-<p>1.在Vulkan API的基础上实现OBJ模型的加载与输出</p>
-<p>2.在导入模型后实现对模型QEM处理</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Visual Studio 2026配置Vulkan</title>
     <url>/2026/07/03/Visual-Studio-2026%E9%85%8D%E7%BD%AEVulkan/</url>
     <content><![CDATA[<h1 id="1-Vulkan-SDK下载安装"><a href="#1-Vulkan-SDK下载安装" class="headerlink" title="1.Vulkan SDK下载安装"></a>1.Vulkan SDK下载安装</h1><p>登录<code>LunarG</code>网站<a href="https://vulkan.lunarg.com/">https://vulkan.lunarg.com/</a>, 选择<code>Windows</code>平台下的最新SDK下载安装（.exe），配置好安装路径。</p>
@@ -56,6 +31,127 @@
 ]]></content>
       <tags>
         <tag>Vulkan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Treellis：AI 生成了 3D 模型，怎样只改其中一个部件？</title>
+    <url>/2026/11/24/treellis/</url>
+    <content><![CDATA[<p>假设 AI 已经生成了一台显示器。你对底座、屏幕比例和边框都满意，只想把屏幕稍稍抬高。输入“再高一点”很容易，难的是让系统知道该动屏幕还是支架、动多少，以及哪些地方已经定稿。</p>
+<p>UIST 2026 最佳论文 <strong>Treellis</strong> 中研究了这个问题。他们让 AI 在生成三维模型时，同时交付一棵可编辑的<strong>AML装配树</strong>。这样，用户可以先指明这次修改涉及哪个部件，再决定是亲自调一个参数，还是请 AI 重做这一部分。<a href="https://doi.org/10.1145/3830398.3830694">论文原文</a></p>
+<p><img src="/treellis.assets/airplane.png" alt="Treellis 从提示词生成一架飞机，用户选中上机翼并用滑块调整它的宽度"></p>
+<p><em>论文图 1。选中 Upper Wing 后，上机翼高亮，右侧滑块控制这个部件的缩放。</em></p>
+<h2 id="为什么一条新提示很难只改一个地方？"><a href="#为什么一条新提示很难只改一个地方？" class="headerlink" title="为什么一条新提示很难只改一个地方？"></a>为什么一条新提示很难只改一个地方？</h2><p>建模者可以从点云重建物体表面，也可以通过增减体素塑造实体。直接处理几何能精细控制形状，但需要熟悉相应的工具。文本生成 3D 把第一步简化了：用户只要描述“一架双翼飞机”，就能得到一个初稿。等到用户要加宽上机翼时，这两种工作流的差别才显现出来：在手工模型里，建模者可能知道机翼由哪些部分构成；面对生成结果，用户看得见机翼，却未必能选中它或找到控制翼展的参数。</p>
+<p>以“加长椅子的一条腿”为例，已有工具给用户的控制各不相同：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>可以怎样操作</th>
+<th>改一条椅腿时的难点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OpenSCAD</td>
+<td>在脚本中定义形状和尺寸，重新生成实体</td>
+<td>要找到控制椅腿的参数，或者修改定义它的代码。</td>
+</tr>
+<tr>
+<td>DreamFusion</td>
+<td>从文本描述生成可以多角度观察的三维对象</td>
+<td>生成结果没有按名称组织的装配树，无法直接选中椅腿并设置长度。</td>
+</tr>
+<tr>
+<td>NeRFshop</td>
+<td>用笔划选中区域，再用控制笼使其变形</td>
+<td>要先把椅腿从周围几何中准确圈出来，选区会影响变形结果。</td>
+</tr>
+<tr>
+<td>VRCopilot</td>
+<td>在虚拟现实中用线框引导房间布局</td>
+<td>可以调整椅子在房间里的位置，布局控件却管不到单条椅腿。</td>
+</tr>
+</tbody></table>
+<p>这四项是根据论文相关工作整理的工具比较。Treellis 的想法很直接：既然用户能指出“我要改的是左前腿”，系统就应该让这条腿在生成后仍是一个有名字、可以选中和调整的部件。</p>
+<h2 id="模型、装配树和滑块怎样对上号？"><a href="#模型、装配树和滑块怎样对上号？" class="headerlink" title="模型、装配树和滑块怎样对上号？"></a>模型、装配树和滑块怎样对上号？</h2><p>看下面这把椅子。点击视窗中的左前腿，装配树里的 <strong>Leg FL</strong> 也会被选中，右侧面板随之显示这条腿的颜色和位置。从树上反过来点，模型里也会高亮同一条腿。用户在拖动滑块之前，就能确认这次修改会落在哪里。</p>
+<p><img src="/treellis.assets/chair-workspace.png" alt="Treellis 的椅子编辑界面，结构树、三维视窗和参数面板同时指向左前腿"></p>
+<p><em>论文图 2。A 是提示词输入区，B 是三维视窗，C 是装配树，D 是参数面板。</em></p>
+<p>三个视图能保持同步，是因为它们都读取同一份 <strong>AML（Assembly-level Modeling Language，装配级建模语言）</strong> 场景描述。AML 用三类节点记录物体的构成：</p>
+<ul>
+<li><strong>基本形体</strong>记录球、圆柱等形状的尺寸与变换。例如，改变圆柱的半径就能调整它的粗细。</li>
+<li><strong>布尔运算</strong>记录形体怎样组合。把一个小圆柱从大圆柱中减去，就能形成中空的管状结构。</li>
+<li><strong>重复节点</strong>记录一个部件怎样沿直线或圆周排列。如果四个喷嘴来自同一个重复节点，把数量从四改为三即可。</li>
+</ul>
+<p>每个节点的路径把树里的部件、视窗里的几何和面板里的参数联系起来。用户可以改一个数字、手动增删或重组节点，也可以选中一棵子树，直接描述想要的修改。</p>
+<h2 id="一枚火箭上的三种修改尺度"><a href="#一枚火箭上的三种修改尺度" class="headerlink" title="一枚火箭上的三种修改尺度"></a>一枚火箭上的三种修改尺度</h2><p>论文里的火箭演示展示了用户为什么需要在这些方式之间切换。先看尾翼：位置偏低、朝向也不理想，直接调高度和旋转角度最省事。接下来，研究者希望整枚火箭再丰富一些，就把当前场景作为上下文，重新发起一次全局提示。到了发动机，意图又变得很具体：删除多余的圆环，给这组零件增加喷嘴，再把喷嘴数量从四个调成三个。</p>
+<p><img src="/treellis.assets/rocket.png" alt="火箭从初稿到尾部细化的过程，展示尾翼调整、全局提示和发动机局部编辑"></p>
+<p><em>论文图 3。上排从左向右看，下排沿箭头返回。这是研究者的演示。</em></p>
+<p>这里的“局部”有明确的实现方式。按论文描述，系统把选中的发动机子树和修改请求发给 GPT-5.3，得到新的 AML 片段后先校验，再把它放回原来的位置。其他分支无需重新生成。于是，“多加几个喷嘴”交给 AI 处理，而“正好三个”仍然可以由用户精确决定。</p>
+<h2 id="实验一：AI-生成的初稿真的能接着改吗？"><a href="#实验一：AI-生成的初稿真的能接着改吗？" class="headerlink" title="实验一：AI 生成的初稿真的能接着改吗？"></a>实验一：AI 生成的初稿真的能接着改吗？</h2><p>作者把同样的 50 条建模需求分别交给三种提示配置。<strong>可继续编辑（edit-ready）</strong> 指模型能通过修改参数或节点继续完善，无须重新生成或大幅重建。<strong>符合提示（prompt match）</strong> 则考察模型是否体现了所要求的物体及其主要关系。一个模型可以同时满足两项。</p>
+<table>
+<thead>
+<tr>
+<th>提示配置</th>
+<th align="right">可继续编辑</th>
+<th align="right">符合提示</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础提示：任务说明和 AML 格式</td>
+<td align="right">32&#x2F;50</td>
+<td align="right">41&#x2F;50</td>
+</tr>
+<tr>
+<td>在基础提示中加入 AML 示例</td>
+<td align="right">38&#x2F;50</td>
+<td align="right">46&#x2F;50</td>
+</tr>
+<tr>
+<td>再加入节点、重复与几何有效性规则</td>
+<td align="right">43&#x2F;50</td>
+<td align="right">47&#x2F;50</td>
+</tr>
+</tbody></table>
+<p>三种配置各自都有至少 49 个结果能解析并渲染，真正拉开差距的是生成后的可编辑性。在这批需求上，加入示例和规则后，可接着修改的初稿从 32 个增加到 43 个。数据来自论文表 1。</p>
+<h2 id="实验二：新手能独立把模型改到目标状态吗？"><a href="#实验二：新手能独立把模型改到目标状态吗？" class="headerlink" title="实验二：新手能独立把模型改到目标状态吗？"></a>实验二：新手能独立把模型改到目标状态吗？</h2><p>24 名没有专业三维建模经验的参与者被随机分成两组，每组 12 人。一组使用完整的 Treellis，另一组只能输入提示词。每个人都要完成桌子、显示器和杯子三组任务，每组有三个连续目标，每个目标限时四分钟。例如，杯柄要形成闭环，而且不能穿进杯子内部。</p>
+<p><img src="/treellis.assets/study-targets.png" alt="桌子、显示器和杯子各自的三个连续目标状态"></p>
+<p><em>论文图 5。显示器的 M1 到 M2 要求屏幕升高，M2 到 M3 要求边框变厚。</em></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th align="right">仅用提示词</th>
+<th align="right">Treellis</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>独立完成的检查点</td>
+<td align="right">92&#x2F;108（85.2%）</td>
+<td align="right">106&#x2F;108（98.1%）</td>
+</tr>
+<tr>
+<td>系统可用性量表平均得分（SUS，满分 100）</td>
+<td align="right">74.0</td>
+<td align="right">87.7</td>
+</tr>
+</tbody></table>
+<p>每组的 108 个检查点来自 <strong>12 人 × 9 个目标</strong>。独立完成意味着参与者在规定时间内达标，而且没有向实验人员求助。Treellis 组多独立完成了 14 个检查点。两组的平均 SUS 评分相差 13.7 分，论文报告的 Welch 双样本 <em>t</em> 检验为 <em>p</em> &#x3D; .0052；这个数值对应的是<strong>可用性评分</strong>。数据来自论文图 7 和附录 D。</p>
+<p>杯子的操作记录说明了为什么局部控制有用。下图上排的一位参与者在 A2 已经解决了杯柄穿入杯身的问题，后续提示却让类似问题在 A5 再次出现。下排另一位参与者先用提示词生成初稿，再直接增删和调整相关部件。两条轨迹展示了不同的修复过程，步骤数本身不能用来比较整体效率。</p>
+<p><img src="/treellis.assets/cup-repair.png" alt="两名参与者修改杯子的轨迹，上排用提示词反复生成，下排结合提示和手工编辑"></p>
+<p><em>论文图 8。对照上排的 A2 和 A5，可以看到一次已经完成的修复为什么还需要重做。</em></p>
+<h2 id="自由创作时，人会在什么时候接手？"><a href="#自由创作时，人会在什么时候接手？" class="headerlink" title="自由创作时，人会在什么时候接手？"></a>自由创作时，人会在什么时候接手？</h2><p>作者还让另外 5 位参与者各进行三次开放式创作，每次最多一小时。下图是一位参与者制作马桶的过程：先用提示词得到整体形状，接着旋转座圈使其对齐，调整盖板的位置，最后处理管道并修改颜色。调错方向时，他可以撤销，再沿另一个轴尝试。</p>
+<p><img src="/treellis.assets/open-ended-editing.png" alt="一位参与者从初稿开始，逐步对齐座圈、修正盖板、调整管道和颜色"></p>
+<p><em>论文图 10。按箭头从 T1 读到 T15；黄色标出当前选中的部件。</em></p>
+<p>这个例子补充了完成率说不出的细节：用户对整体只有大致想法时，全局提示很方便；当问题已经具体到“座圈歪了”，一个有即时反馈的旋转控件更容易掌握；当范围很清楚、内部结构又比较复杂时，才轮到针对子树的局部提示。</p>
+<h2 id="这项工作留下了哪些问题？"><a href="#这项工作留下了哪些问题？" class="headerlink" title="这项工作留下了哪些问题？"></a>这项工作留下了哪些问题？</h2><p>作者在论文第 6.3 节指出，AML 能表达的几何形状和可编辑属性有限，生成操作依赖外部语言模型和文字输入，现有研究覆盖的任务也有限。作者建议扩展几何表示和约束、支持多模态输入，并探索针对局部生成的专用模型。落实到交互上，可以想象这样的改进：用户直接在选中部件上画出预期轮廓，或者给相邻零件加上对齐约束。这是对作者方向的具体举例。</p>
+<p><strong>还有一个值得单独验证的问题：装配树和滑块各自贡献了多少？</strong> 现有对照实验把两项功能一起交给了 Treellis 组。我的后续实验设想是让两组都拥有相同的滑块，只给其中一组装配树，再分别记录用户定位部件和修好部件所需的时间。这样能更清楚地解释，帮助究竟发生在“找到改哪里”，还是“动手把它改对”。</p>
+<p>在应用上，<strong>作者提出了个人制造和实体建模教学两个方向</strong>。前者让新手先从文字得到初稿，调整零件尺寸后再导出制作；后者让学习者切换并集、差集等操作，观察同一组形体怎样得到不同结果。</p>
+<p>沿着论文的思路，我还想追问两个问题。其一，在图表编辑器里，一组数据系列能否像一条椅腿那样被单独选中并交给 AI 修改？在动画里，对应的单位也许是一条运动轨道。其二，当工业设计师要改外形、工程师又要保留内部空间时，多位设计者能否借助同一棵装配树与 AI 一起协调需求？这两个具体设想来自汇报者，有待后续研究。</p>
+<p>回到最初的显示器：用户通常已经知道哪些部分满意、哪里还差一点。Treellis 给出的办法，是让这份判断能够落在一个可选择的部件、一个可调整的参数，或一组可以交给 AI 重做的结构上。</p>
+<hr>
+<p><strong>论文与图片来源</strong>：Yixiang Chen、Adele Tong、Praneeth Perera、Chuancheng Shi、Per Ola Kristensson、Zhiyong Wang、Rajesh Balan、Alistair McEwan、Zhanna Sarsenbayeva、Anusha Withana，<em>Treellis: Exposing Editable Assembly Structures for Progressive Human-AI Co-Creation of 3D Models</em>，UIST 2026。本文根据 Shun Huang 的论文汇报整理。配图取自汇报中引用的论文原图，图号见图注。论文标注许可为 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>。<a href="https://doi.org/10.1145/3830398.3830694">论文 DOI</a> · <a href="https://www.aid-lab.org/treellis">Treellis 项目主页</a></p>
+]]></content>
+      <tags>
+        <tag>论文分享</tag>
       </tags>
   </entry>
 </search>
